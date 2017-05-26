@@ -625,7 +625,7 @@ if !logDir.exists {
     try Dir(logPath).create()
 }
 
-LogFile.location = "\(logPath)/DiaryMood.log"
+LogFile.location = "\(logPath)/app.log"
 // 日志过滤器，将日志写入对应的文件
 //server.setRequestFilters([(RequestLogger(), .high)]) // 首先增加高优先级的过滤器
 //server.setResponseFilters([(RequestLogger(), .low)]) // 首先增加高优先级的过滤器
